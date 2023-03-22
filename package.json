@@ -1,0 +1,34 @@
+{
+  "name": "midis4course",
+  "version": "1.2.3",
+  "description": "for Midis",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlad19982602/MIDIS4COURSE.git"
+  },
+  "author": "Vladislav Fedorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlad19982602/MIDIS4COURSE/issues"
+  },
+  "homepage": "https://github.com/Vlad19982602/MIDIS4COURSE#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "eslint": "^8.36.0",
+    "glob-parent": "^6.0.2",
+    "glob-stream": "^7.0.0",
+    "source-map": "^0.7.4",
+    "urix": "^0.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.0",
+    "core-js": "^3.29.1",
+    "gulp": "^4.0.2",
+    "webpack": "^5.76.2",
+    "webpack-stream": "^7.0.0"
+  }
+}
