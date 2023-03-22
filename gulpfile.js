@@ -1,6 +1,9 @@
 const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
+const urix = require("urix");
+
+urix("c:\\users\\you\\foo");
 
 const dist = "./dist/"; //эквивалентны с записью ниже
 //const dist = "/OpenServer/domains/BoostedPROMO/dist";
@@ -12,11 +15,11 @@ gulp.task("copy-html", () => {
 });
 
 gulp.task("build-js", () => {
-    return gulp.src("src/js/main.js")
+    return gulp.src("src/js/script.js")
                 .pipe(webpack({
                     mode: 'development',
                     output: {
-                        filename: 'js/main.js'
+                        filename: 'js/script.js'
                     },
                     watch: false,
                     devtool: "source-map",
