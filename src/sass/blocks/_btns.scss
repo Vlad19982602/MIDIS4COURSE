@@ -1,0 +1,47 @@
+.btn {
+    position: relative;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    width: 100%;
+    max-width: 168px;
+    height: max-content;
+    min-height: 37px;
+    padding: 7px 17px;
+    cursor: pointer;
+    transition-duration: .2s;
+    margin: 5px 0;
+}
+
+.btn.btn_solid {
+    text-transform: uppercase;
+    color: $main-back;
+    background: rgb(253, 126, 0);
+    border: 1px solid rgb(255, 167, 3);
+    &:hover {
+        content: '';
+        background-color: $main-back;
+        border: 1px solid $main-color;
+        color: $main-color;
+    }
+}
+
+.btn_mobile {
+    display: none;
+    max-width: 48px;
+    height: 48px;
+    border: 1px solid orange !important;
+    padding: 0 7px 0 0 !important;
+    justify-content: center;
+    align-items: center;
+    svg {
+        fill: orange;
+    }
+}
+

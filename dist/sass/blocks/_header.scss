@@ -61,7 +61,7 @@ header.main-header1 {
     width: 212px;
     height: 34px;
     border: 1px solid #999999;
-    background-color: #F2F2F2;
+    background-color: $main-back;
     border-radius: 2px;
     padding-left: 30px;
 }
@@ -127,7 +127,7 @@ header.main-header1 {
         text-decoration: none;
         font-size: 15px;
         &:hover {
-            color: orange;
+            color: $main-color;
         }
     }
     &__list {
