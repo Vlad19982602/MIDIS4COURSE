@@ -1,0 +1,180 @@
+.specialities-block__tabs {
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 122px;
+}
+.tabs-nav {
+    position: relative;
+}
+.specialities-block__tab {
+    max-width: 600px;
+}
+.specialities-block__tab.current {
+    color: $main-back;
+    background: orangered;
+    border: 1px solid $main-color;
+}
+
+.specialities-block__tab:first-child {
+    margin-right: 20px;
+}
+.specialities-block__tab:nth-child(2) {
+    flex-grow: 1;
+	&:hover {
+        content: '';
+        background-color: $main-back;
+        border: 1px solid $main-color;
+        color: $main-color;
+    }
+}
+.tabs-content__item {
+    display: none;
+    animation: b 1s forwards;
+}
+.tabs-content__item.current {
+    display: block;
+}
+.specialities-block__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+.edu22-container {
+    display: block;
+    max-width: 1122px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edu22-box {
+    border: 1px solid;
+    margin-bottom: 7px;
+}
+.edu22-title-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    position: relative;
+    padding-left: 113px;
+    cursor: pointer;
+}
+.edu22-title {
+    width: 302px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.edu22-price {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    width: 211px;
+    margin-left: 209px;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.edu22-programm {
+    display: block;
+    font-weight: 400;
+    width: 211px;
+    margin-left: 25px;
+    font-size: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.edu22-btn {
+    position: absolute;
+    top: 23px;
+    right: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.edu22-btn {
+    display: block;
+    cursor: pointer;
+}
+.edu22-btn-arrow {
+    left: 9px;
+    top: 5px;
+    transform: rotate(135deg);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+}
+p:last-of-type {
+    margin-bottom: 0;
+}
+p:first-of-type {
+    margin-top: 0;
+}
+
+//////////////
+
+.edu22-container-inner {
+    display: block;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 114px;
+    padding-right: 115px;
+}
+.edu22-container-inner.edu22-opened {
+    padding-bottom: 10px;
+}
+.edu22-opened {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.edu22-box-open {
+    padding-top: 20px;
+}
+
+b, strong {
+    font-weight: inherit;
+    font-weight: bolder;
+}
+i {
+    font-weight: 300;
+}
+
+.edu22-inner-desc-el {
+    display: block;
+    width: 29%;
+    font-size: 16px;
+    margin: 30px 38px 30px 0;
+}
+.edu22-title-open {
+    color: #FF6014;
+}
+
+/////////////////////
+
+.edu22-inner-desc {
+    display: flex;
+    flex-wrap: wrap;
+}

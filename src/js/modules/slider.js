@@ -1,6 +1,5 @@
 const slider = (slides, prev, next) => {
-	let slideIndex = 1,
-		paused = false;
+	let slideIndex = 1;
 	const items = document.querySelectorAll(slides);
 
 	function currentSlide(n) {
@@ -18,12 +17,14 @@ const slider = (slides, prev, next) => {
 			slideIndex = items.length;
 		}
 
-		items.forEach(item => {
-			item.classList.add("animated");
-			item.style.display = "none";
-		});
+		//items.forEach(item => {
+		//	item.classList.add("animated");
+		//	item.style.display = "none";
+		//});
 
-		items[slideIndex - 1].style.display = 'flex';
+		if(items[slideIndex - 1]) {
+			items[slideIndex - 1].style.display = 'flex';
+		}
 	}
 
 	showSlides(slideIndex);
@@ -50,6 +51,8 @@ const slider = (slides, prev, next) => {
 			items[slideIndex - 1].classList.add('slideInLeft');*/
 		});
 	} catch(e) {}
+
+	plusSlides();
 	};
 
 export default slider;

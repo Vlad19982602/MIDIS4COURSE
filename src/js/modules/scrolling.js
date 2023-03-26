@@ -54,7 +54,6 @@ const scrolling = (upSelector) => {
 				(to > from && scrollTop >= to ||
 					to < from && scrollTop <= to)) {
 						clearInterval(move);
-						history.replaceState(history.state, document.title, location.htrf.replace(/#.*$/g, '') + hash);
 			} else {
 				body.scrollTop += speed;
 				elem.scrollTop += speed;
